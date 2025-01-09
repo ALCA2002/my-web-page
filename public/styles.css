@@ -1,0 +1,225 @@
+/* General styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+hr {
+    width: 1500px;
+}
+
+/* Centering the main content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #990505;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styling for headings */
+p {
+    color: #444544; 
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-size: 3em; 
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h2 {
+    color: #444544; 
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-size: 1em; 
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h1 {
+    color: #444544; 
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-size: 1em; 
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+h3 {
+    color: #444544; 
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-size: 2em; 
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid #565555;
+    background-color: #777;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin: 10px 0 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px #ccc;
+    border-radius: 1px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #9c9e9d; 
+    outline: none; 
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9faf9; 
+    color: rgb(15, 14, 14);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #4348da; 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+/* Link styles */
+a {
+    display: block; 
+    margin: 0 auto; 
+    width: fit-content; 
+    color: #424344; 
+    text-align: center;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: #434443; 
+}
+
+.container {
+    display: flex; 
+    justify-content: center; 
+    background-color: transparent; 
+    padding: 20px; 
+    box-shadow: none; 
+    border: none; 
+}
+
+.link {
+    margin: 0 50px; 
+    padding: 10px 20px; 
+    background-color: transparent; 
+    color: black; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.link:hover {
+    background-color: rgba(135, 206, 250, 0.9); /* Change background on hover */
+}
+
+/* Recipe list styles */
+ul {
+    list-style-type: square; 
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ol {
+    list-style-type: decimal;  
+}
+
+li {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    transition: box-shadow 0.3s ease; 
+}
+
+li:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Recipe details */
+.recipe-title {
+    font-size: 1.5em; 
+    color: #28a745; 
+}
+
+.recipe-category {
+    font-style: italic;
+    color: #777; 
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .container {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust heading size */
+    }
+
+    button, input, textarea {
+        font-size: 14px; /* Adjust font size */
+    }
+}

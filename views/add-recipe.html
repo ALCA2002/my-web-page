@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Add a New Recipe</h1>
+    <form action="/add-recipe" method="POST">
+        <label for="title">Recipe Title:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" required></textarea>
+        <br>
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" required></textarea>
+        <br>
+        <select name="category" required style="padding: 20px; border-radius: 5px; border: 1px solid white; font-size: 16px; width: 100%; max-width: 300px; margin-top: 20px; margin-bottom: 20px;">
+            <option value="" disabled selected>Select Category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+        <br>
+        <button type="submit">Add Recipe</button>
+    </form>
+    <a href="/recipes.html">View All Recipes</a>
+</body>
+</html>
